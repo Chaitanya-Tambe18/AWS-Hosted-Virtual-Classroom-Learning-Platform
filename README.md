@@ -1,4 +1,57 @@
-# AWS-Hosted-Virtual-Classroom-Learning-Platform
+# AWS-Hosted Virtual Classroom and Learning Platform
+
+## 📌 Project Overview
+
+The AWS-Hosted Virtual Classroom and Learning Platform is a cloud-based web application developed using Flask and AWS services. The platform enables students to register, log in, and access learning materials uploaded by administrators. The project demonstrates how modern web applications can be deployed and scaled using AWS cloud infrastructure.
+
+---
+
+## 🚀 Features
+
+* User Registration and Login System
+* Secure Authentication
+* Upload and Access Learning Materials
+* Cloud Storage using AWS S3
+* MySQL Database hosted on AWS RDS
+* Flask-Based Backend APIs
+* Responsive User Interface
+
+---
+
+## 🛠️ Technologies Used
+
+### Backend
+
+* Python
+* Flask
+
+### Frontend
+
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+
+### Database
+
+* MySQL (AWS RDS)
+
+### Cloud Services
+
+* AWS EC2
+* AWS S3
+* AWS RDS
+
+### Other Tools
+
+* Git & GitHub
+* MySQL Workbench
+
+---
+
+## 📂 Project Structure
+
+```bash
 AWS-hosted-Virtual-Classroom-and-Learning-Platform/
 ├── Documentation/
 │   └── Final document.pdf
@@ -13,48 +66,118 @@ AWS-hosted-Virtual-Classroom-and-Learning-Platform/
 ├── requirements.txt
 └── tempCodeRunnerFile.py
 
-Technologies Used
+## 🏗️ System Architecture
 
-    Backend: Python, Flask
-    Frontend: HTML, CSS, JavaScript, Bootstrap
-    Database: MySQL (AWS RDS)
-    Cloud Services: AWS EC2, S3, RDS
-    Other Tools: Git & GitHub, MySQL Workbench
+### Frontend
 
-System Architecture
+* HTML, CSS, and JavaScript pages rendered using Flask templates.
 
-    Frontend: HTML/CSS/JS served via Flask templates
-    Backend: Flask APIs managing user and file routes
-    Storage: PDFs stored in S3
-    Database: User and file metadata stored in RDS (MySQL)
-    Deployment: Flask app hosted on EC2
+### Backend
 
-Project Workflow
+* Flask APIs manage authentication, routing, and file operations.
 
-    Create and Configure AWS Services:
-        AWS Account, S3 Bucket, RDS MySQL, EC2 Instance
-    Develop Flask App:
-        Build register/login routes
-        Create templates: home.html, register.html, login.html, content.html
-        Connect to S3 using boto3 and to RDS using pymysql
-    Deploy Application:
-        SSH into EC2, clone GitHub repo, install dependencies
-        Run Flask app using evelopment server
-    Push Code to GitHub
+### Storage
 
-👨‍🏫 User Scenarios
-Student Registration and Login
+* Learning materials such as PDFs are stored in AWS S3.
 
-    Registers via web form, logs in, accesses course content stored on S3.
+### Database
 
-Admin Uploads Content
+* User data and file metadata are stored in AWS RDS (MySQL).
 
-    Uploads PDFs or videos to S3 with metadata stored in RDS.
+### Deployment
 
-Student Downloads Content
+* The Flask application is deployed on an AWS EC2 instance.
 
-    Clicks a file link to download directly from S3.
+## 🔄 Project Workflow
 
-✅ Conclusion
+### 1. Create and Configure AWS Services
 
-This project showcases how web applications can be effectively deployed and scaled using AWS. With Flask at its core and AWS services powering the backend, it provides a modern, secure, and user-friendly experience for online learning platforms.
+* Create AWS Account
+* Configure AWS S3 Bucket
+* Configure AWS RDS MySQL Database
+* Launch AWS EC2 Instance
+
+### 2. Develop Flask Application
+
+* Build registration and login routes
+* Create frontend templates:
+
+  * `home.html`
+  * `register.html`
+  * `login.html`
+  * `content.html`
+* Connect Flask with:
+
+  * AWS S3 using `boto3`
+  * AWS RDS using `pymysql`
+
+### 3. Deploy the Application
+
+* Connect to EC2 using SSH
+* Clone GitHub repository
+* Install required dependencies
+* Run Flask application server
+
+### 4. Push Code to GitHub
+
+* Initialize Git repository
+* Commit project files
+* Push source code to GitHub
+
+## 👨‍🏫 User Scenarios
+
+### Student Registration and Login
+
+Students can:
+
+* Register using the web interface
+* Log in securely
+* Access learning materials stored on AWS S3
+
+### Admin Uploads Content
+
+Administrators can:
+
+* Upload PDFs and learning resources to AWS S3
+* Store file metadata in AWS RDS
+
+### Student Downloads Content
+
+Students can:
+
+* View available learning resources
+* Download files directly from AWS S3
+
+## ⚙️ Installation and Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Chaitanya-Tambe18/AWS-Hosted-Virtual-Classroom-Learning-Platform.git
+```
+
+### Navigate to Project Directory
+
+```bash
+cd AWS-Hosted-Virtual-Classroom-Learning-Platform
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Flask Application
+
+```bash
+python app.py
+```
+## ✅ Conclusion
+
+This project demonstrates how cloud technologies can be integrated with web development to create scalable and secure learning platforms. By combining Flask with AWS services such as EC2, S3, and RDS, the system provides a modern and efficient online classroom experience.
+
+## 📎 GitHub Repository
+
+Repository Link:
+https://github.com/Chaitanya-Tambe18/AWS-Hosted-Virtual-Classroom-Learning-Platform
